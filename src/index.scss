@@ -1,5 +1,33 @@
-$main-color: powderblue;
+$main-color: #25292e;
+$white: #e0e0e0;
 
 body {
   background-color: $main-color;
+}
+h1{
+  color: $white;
+}
+.board{
+  .row{
+    display: flex;
+    .col{
+      width:50px;
+      height: 50px;
+      border:1px solid $white;
+      margin: 1px;
+      &.checked{
+        background-color: $white;
+      }
+    }
+  }
+}
+.result{
+  color:$white;
+  font-size:24px;
+}
+.reset{
+  display: none;
+  &.show{
+    display: inline-block;
+  }
 }
